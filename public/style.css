@@ -1,3 +1,6 @@
+---
+title: css
+---
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Dekko&display=swap");
 @font-face {
@@ -116,9 +119,9 @@ h6 {
 }
 .title {
     font-family: 'Dekko', cursive;
-    color: #ec3750;
-    /*color: var(--red);
-    font-size: 48px;*/
+    /*color: #ec3750;*/
+    color: var(--red);
+    font-size: 48px;
 }
 
 .jumbotron,
@@ -153,7 +156,7 @@ th {
     text-decoration: none;
 }
 .webring-logo {
-    background-image: url(https://lqrg.github.io/public/lqrg.png);
+    background-image: url({{site.github.url}}/public/lqrg.png);
     background-repeat: no-repeat;
     background-position: top left;
     background-size: contain;
