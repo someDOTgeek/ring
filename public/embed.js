@@ -1,3 +1,6 @@
+---
+title: embed
+---
 ;(function () {
     var wrapper = document.getElementById("webring-wrapper")
 
