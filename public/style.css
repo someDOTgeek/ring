@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Dekko&display=swap");
 @font-face {
     font-family: "Phantom Sans";
     src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff")
@@ -113,6 +115,7 @@ h6 {
     line-height: 1.2;
 }
 .title {
+    font-family: 'Dekko', cursive;
     color: var(--red);
     font-size: 48px;
 }
@@ -149,7 +152,7 @@ th {
     text-decoration: none;
 }
 .webring-logo {
-    background-image: url(https://assets.hackclub.com/icon-rounded.svg);
+    background-image: url(https://lqrg.netlify.app/public/lqrg.png);
     background-repeat: no-repeat;
     background-position: top left;
     background-size: contain;
@@ -163,48 +166,6 @@ th {
     vertical-align: middle;
 }
 
-.flag {
-    background-image: url(https://assets.hackclub.com/flag-orpheus-top.svg);
-    position: absolute; 
-    top: 0; 
-    left: 10px; 
-    border: 0; 
-    width: 112px; 
-    z-index: 999;
-    background-repeat: no-repeat;
-    -webkit-background-position: top left;
-    background-position: top left;
-    -webkit-background-size: contain;
-    background-size: contain;
-    cursor: pointer;
-    -webkit-flex-shrink: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    width: 112px;
-    height: 48px;
-    -webkit-transition: 0.1875s cubic-bezier(0.375, 0, 0.675, 1) -webkit-transform;
-    transition: 0.1875s cubic-bezier(0.375, 0, 0.675, 1) transform;
-    transform-origin: top left;
-}
-
-@media (min-width: 48em) {
-    .flag {
-        width:172px;
-        height: 64px;
-    }
-}
-
-.flag:hover,.flag:focus {
-    -webkit-animation: animation-flag 0.5s linear infinite alternate;
-    animation: animation-flag 0.5s linear infinite alternate;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .flag {
-        -webkit-animation: none!important;
-        animation: none!important;
-    }
-}
 
 @-webkit-keyframes animation-flag {
     from {
