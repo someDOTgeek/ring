@@ -20,15 +20,12 @@
         <nav class="navbar fixed-top navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand title" style="color:#ec3750">LQring</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                     <li class="nav-item">
-                        <a class="nav-link{% if title == 'Webs' %} active{% endif %}" aria-current="page" href="/">Home</a>
+                        <a class="nav-link{% if page.title == 'Webs' %} active{% endif %}" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link{% if title == 'Unite' %} active{% endif %}" aria-current="page" href="/unite">Unite</a>
+                        <a class="nav-link{% if page.title == 'Unite' %} active{% endif %}" aria-current="page" href="/unite">Unite</a>
                     </li>
                 </ul>
                 <!--<p class="lead">--><span class="navbar-text">Webs hechas por gente como vos</span>
