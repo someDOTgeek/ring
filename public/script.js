@@ -1,4 +1,7 @@
-let requestURL = "/members.json";
+---
+title: script
+---
+let requestURL = "{{site.github.url}}/members.json";
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
