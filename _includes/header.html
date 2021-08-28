@@ -23,8 +23,10 @@
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                     <li class="nav-item">
-                        <a class="nav-link {% if title == 'Webs' %}active{% endif %}" aria-current="page" href="/">Home</a>
-                        <a class="nav-link {% if title == 'Unite' %}active{% endif %}" aria-current="page" href="/unite">Home</a>
+                        <a class="nav-link{% if title == 'Webs' %} active{% endif %}" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link{% if title == 'Unite' %} active{% endif %}" aria-current="page" href="/unite">Unite</a>
                     </li>
                 </div>
                 <!--<p class="lead">--><span class="navbar-text">Webs hechas por gente como vos</span>
