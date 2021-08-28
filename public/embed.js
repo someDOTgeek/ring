@@ -6,7 +6,7 @@ title: embed
 
     var style = document.createElement("style")
     style.innerHTML =
-        ".webring-anchor{font-size:24px;color:rgba(132,146,166,.8);text-decoration:none;transition:color .5s}.webring-anchor:hover{color:#8492a6;text-decoration:none}.webring-logo{background-image:url(https://lqrg.github.io/public/lqrg.png);background-repeat:no-repeat;background-position:top left;background-size:contain;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;display:inline-block;width:36px;height:36px;margin:0 4px;vertical-align:middle}"
+        ".webring-anchor{font-size:24px;color:rgba(132,146,166,.8);text-decoration:none;transition:color .5s}.webring-anchor:hover{color:#8492a6;text-decoration:none}.webring-logo{background-image:url({{site.github.url}}/public/lqrg.png);background-repeat:no-repeat;background-position:top left;background-size:contain;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;display:inline-block;width:36px;height:36px;margin:0 4px;vertical-align:middle}"
     wrapper.appendChild(style)
 
     var siteHost = document.location.hostname.toLowerCase()
@@ -17,7 +17,7 @@ title: embed
     var previousBtn = document.getElementById("previousBtn")
     var nextBtn = document.getElementById("nextBtn")
 
-    let requestURL = "https://lqrg.github.io/members.json"
+    let requestURL = "{{site.github.url}}/members.json"
     let request = new XMLHttpRequest()
     request.open("GET", requestURL)
     request.responseType = "json"
