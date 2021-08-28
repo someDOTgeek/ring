@@ -1,54 +1,4 @@
-<!DOCTYPE html>
-<html>
-<html lang="en">
-
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta property="og:site_name" content="LQring">
-    <meta property="og:title" content="LuQaska's RinG">
-    <meta name="description" content="Páginas hechas por los pibes">
-    <meta property="og:description" content="Páginas hechas por los pibes">
-    <meta property="og:image" content="public/lqrg.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="public/style.css">
-    <title>LuQaska's RinG</title>
-</head>
-
-<body>
-    <div class="jumbotron jumbotron-fluid">
-        <nav class="navbar fixed-top navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand title" style="color:#ec3750">LQring</a>
-                <!--<p class="lead">--><span class="navbar-text">Webs hechas por gente como vos</span>
-            </div>
-    </div><br />
-    <div class="container my-5">
-        <h2 class="mt-5">Cómo unirse</h2>
-        <p>Poné esto en el código de tu web:</p>
-        <div class="row">
-            <div class="col-sm-4 text-center my-5">
-                <div id="webring-wrapper">
-                    <a href="#" id="previousBtn" class="webring-anchor" title="Anterior">‹-</a>
-                    <a href="#" class="webring-logo" title="LQring" alt="LQring"></a>
-                    <a href="#" id="nextBtn" class="webring-anchor" title="Siguiente">-›</a>
-                </div>
-                <p class="small text-muted mt-3">Live preview</p>
-            </div>
-            <div class="col-sm">
-                <pre class="px-4 rounded-lg"><code>
-&#x3C;div id=&#x22;webring-wrapper&#x22;&#x3E;
-  &#x3C;a href=&#x22;https://lqrg.netlify.app/&#x22; id=&#x22;previousBtn&#x22; class=&#x22;webring-anchor&#x22; title=&#x22;Anterior&#x22;&#x3E;&#x2039;-&#x3C;/a&#x3E;
-  &#x3C;a href=&#x22;https://lqrg.netlify.app/&#x22; class=&#x22;webring-logo&#x22; title=&#x22;LQring&#x22; alt=&#x22;LQring&#x22;&#x3E;&#x3C;/a&#x3E;
-  &#x3C;a href=&#x22;https://lqrg.netlify.app/&#x22; id=&#x22;nextBtn&#x22; class=&#x22;webring-anchor&#x22; title=&#x22;Siguiente&#x22;&#x3E;-&#x203A;&#x3C;/a&#x3E;
-  &#x3C;script src=&#x22;https://lqrg.netlify.app/public/embed.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
-&#x3C;/div&#x3E;
-          </code></pre>
-            </div>
-        </div>
-        <p>Dsp, añadí un nombre y una URL donde colocó el fragmento de código anterior en el archivo "<a href="https://github.com/luqaska/LQring/edit/master/members.json"><code>members.json</code></a>". Y abrí un <a href="https://github.com/luqaska/LQring/compare">pull request</a>, lo revisamos y lo añadimos</p>
-
-
+{% include header.html %}
         <h2 class="mt-5">Miembros actuales</h2>
         <table class="table">
             <thead>
@@ -60,8 +10,4 @@
             <tbody id="table">
             </tbody>
         </table>
-        <script src="public/script.js"></script>
-    </div>
-</body>
-
-</html>
+{% include footer.html %}
