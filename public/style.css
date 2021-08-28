@@ -116,8 +116,9 @@ h6 {
 }
 .title {
     font-family: 'Dekko', cursive;
-    color: var(--red);
-    font-size: 48px;
+    color: #ec3750;
+    /*color: var(--red);
+    font-size: 48px;*/
 }
 
 .jumbotron,
