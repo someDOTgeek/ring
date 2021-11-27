@@ -1,0 +1,28 @@
+---
+title: Join
+---
+{% include header.html %}
+<h2 class="mt-5">How to join</h2>
+        <p>Put this code on your web:</p>
+        <div class="row">
+            <div class="col-sm-4 text-center my-5">
+                <div id="webring-wrapper">
+                    <a href="#" id="previousBtn" class="webring-anchor" title="Back">‹-</a>
+                    <a href="#" class="webring-logo" title="some.ring" alt="some.ring"></a>
+                    <a href="#" id="nextBtn" class="webring-anchor" title="Next">-›</a>
+                </div>
+                <p class="small text-muted mt-3">Live preview</p>
+            </div>
+            <div class="col-sm">
+                <pre class="px-4 rounded-lg"><code>
+&#x3C;div id=&#x22;webring-wrapper&#x22;&#x3E;
+  &#x3C;a href=&#x22;{{site.github.url}}/&#x22; id=&#x22;previousBtn&#x22; class=&#x22;webring-anchor&#x22; title=&#x22;Back&#x22;&#x3E;&#x2039;-&#x3C;/a&#x3E;
+  &#x3C;a href=&#x22;{{site.github.url}}/&#x22; class=&#x22;webring-logo&#x22; title=&#x22;some.ring&#x22; alt=&#x22;some.ring&#x22;&#x3E;&#x3C;/a&#x3E;
+  &#x3C;a href=&#x22;{{site.github.url}}/&#x22; id=&#x22;nextBtn&#x22; class=&#x22;webring-anchor&#x22; title=&#x22;Next&#x22;&#x3E;-&#x203A;&#x3C;/a&#x3E;
+  &#x3C;script src=&#x22;{{site.github.url}}/public/embed.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;/div&#x3E;
+          </code></pre>
+            </div>
+        </div>
+        <p>Next, add a name and the URL where the code was placed on the file "<a href="https://github.com/someDOTgeek/ring/edit/master/members.json"><code>members.json</code></a>". And open a <a href="https://github.com/someDOTgeek/ring/compare">pull request</a>, we'll revise it and, if we see all is right, we'll aprove it</p>
+{% include footer.html %}
